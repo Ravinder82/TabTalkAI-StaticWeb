@@ -1,0 +1,121 @@
+:root {
+  --primary: #ff8800;
+  --secondary: #4f8cff;
+  --bg: #181818;
+  --bg-alt: #f5f6fa;
+  --text: #e6e6e6;
+  --text-dark: #222;
+  --accent: #9b59b6;
+  --green: #44b78b;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+header {
+  background: var(--bg);
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--primary);
+  letter-spacing: 0.04em;
+}
+header .tagline {
+  font-size: 1.15rem;
+  color: var(--secondary);
+  margin: 0.5rem 0 1rem 0;
+}
+nav {
+  margin: 1rem 0 0.5rem 0;
+}
+nav a {
+  color: var(--text);
+  background: var(--accent);
+  padding: 0.4em 1.1em;
+  border-radius: 1.4em;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0.5em;
+  transition: background 0.2s;
+}
+nav a:hover {
+  background: var(--primary);
+  color: #fff;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #23272f;
+  border-radius: 1rem;
+  box-shadow: 0 3px 16px #0004;
+  padding: 2rem 1.5rem;
+}
+section {
+  margin-bottom: 2.5rem;
+}
+h2 {
+  color: var(--secondary);
+  margin-bottom: 0.5em;
+}
+ul, ol {
+  margin-left: 1.7em;
+}
+a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--secondary);
+}
+.highlight {
+  color: var(--primary);
+  font-weight: bold;
+}
+.screenshot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.screenshot-grid figure {
+  margin: 0;
+  text-align: center;
+  max-width: 320px;
+}
+.screenshot-grid img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 0.75em;
+  box-shadow: 0 4px 24px #2225;
+  background: #fff;
+}
+.screenshot-grid figcaption {
+  margin-top: 0.5em;
+  color: #bbb;
+  font-size: 0.97em;
+}
+footer {
+  text-align: center;
+  padding: 2em 1em 1em 1em;
+  color: #888;
+  background: #131313;
+  border-radius: 0 0 1.5em 1.5em;
+  margin-top: 2em;
+  font-size: 1em;
+}
+@media (max-width: 680px) {
+  main {
+    padding: 1em 0.2em;
+  }
+  .screenshot-grid {
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+}
